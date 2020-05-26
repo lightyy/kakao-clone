@@ -1,0 +1,59 @@
+@keyframes showNavBarAnim {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBarAnim 0.4s ease-out forwards;
+  animation-delay: 0.2s;
+  position: fixed;
+  width: 100%;
+  padding: 0px 50px;
+  bottom: 0;
+  left: 0;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f7f7f7;
+  box-shadow: 0 -13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.nav__list-bar {
+  border-top: 2px solid #3776AC;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -6px;
+  left: 30px;
+  color: white;
+  background-color: red;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
