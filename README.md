@@ -1,2 +1,2 @@
-# kakao-clone
- HTML, CSS
+# kakaoClone
+ HTML,CSS
